@@ -196,16 +196,4 @@ Provides:
 
 ---
 
-## 👨‍💻 Developed By
 
-**Lucky**
-
-AI-Powered Sustainability Project
-
----
-
-## ⭐ Support
-
-If you like this project, consider giving it a ⭐ on GitHub and sharing it with others.
-
-Together, we can build smarter and greener campuses.
