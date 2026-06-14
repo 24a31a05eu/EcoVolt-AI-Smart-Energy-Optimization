@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoVolt AI – Smart Energy Optimization Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">EcoVolt <span class="logo-ai">AI</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#problem" class="nav-link" data-section="problem">Problem</a></li>
+        <li><a href="#monitoring" class="nav-link" data-section="monitoring">Monitoring</a></li>
+        <li><a href="#ai-engine" class="nav-link" data-section="ai-engine">AI Engine</a></li>
+        <li><a href="#analytics" class="nav-link" data-section="analytics">Analytics</a></li>
+        <li><a href="#sdg" class="nav-link" data-section="sdg">SDG</a></li>
+        <li><a href="#impact" class="nav-link" data-section="impact">Impact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HOME / HERO ===== -->
+  <section class="section hero-section" id="home">
+    <div class="hero-bg-glow"></div>
+    <div class="container hero-container">
+      <div class="hero-badge reveal">AI FOR SUSTAINABILITY</div>
+      <h1 class="hero-title reveal">EcoVolt <span class="hero-ai">AI</span></h1>
+      <p class="hero-subtitle reveal">Smart Energy Optimization Platform</p>
+      <p class="hero-desc reveal">An AI-powered platform that helps educational institutions monitor energy consumption, predict energy wastage, improve efficiency, and support sustainability goals.</p>
+      <div class="hero-buttons reveal">
+        <a href="#monitoring" class="btn btn-primary">Start Monitoring</a>
+        <a href="#analytics" class="btn btn-ghost">View Analytics</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat-card">
+          <span class="stat-icon">🌱</span>
+          <span class="stat-value">47 K kWh</span>
+          <span class="stat-label">Energy Saved</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-icon">💰</span>
+          <span class="stat-value">32%</span>
+          <span class="stat-label">Cost Reduction</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-icon">⚡</span>
+          <span class="stat-value">94%</span>
+          <span class="stat-label">Efficiency Score</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-icon">🎯</span>
+          <span class="stat-value">98%</span>
+          <span class="stat-label">Monitoring Accuracy</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROBLEM ===== -->
+  <section class="section" id="problem">
+    <div class="container">
+      <div class="section-eyebrow reveal">THE CHALLENGE</div>
+      <h2 class="section-title reveal">Energy <span class="highlight-blue">Wastage</span> in Education</h2>
+      <p class="section-desc reveal">Educational institutions consume enormous amounts of electricity daily, yet a significant portion is wasted due to poor occupancy management and lack of intelligent monitoring systems. Lights, fans, air conditioners, and computers remain active in empty classrooms, driving up costs and carbon emissions — undermining sustainability goals worldwide.</p>
+
+      <div class="problem-cards reveal">
+        <div class="problem-card">
+          <span class="problem-icon">💡</span>
+          <h3>Unused Lighting Systems</h3>
+          <p>Lights remain on in unoccupied classrooms and corridors for hours, wasting energy with no benefit to anyone.</p>
+          <div class="problem-tag orange">~35% of lighting energy wasted</div>
+        </div>
+        <div class="problem-card">
+          <span class="problem-icon">❄️</span>
+          <h3>AC Overconsumption</h3>
+          <p>Air conditioning systems run at full capacity regardless of room occupancy or outdoor temperature conditions.</p>
+          <div class="problem-tag orange">~42% of HVAC energy wasted</div>
+        </div>
+        <div class="problem-card">
+          <span class="problem-icon">💻</span>
+          <h3>Device Energy Waste</h3>
+          <p>Computer labs and smart boards remain powered on overnight and during holidays without any productive use.</p>
+          <div class="problem-tag orange">~28% of device energy wasted</div>
+        </div>
+        <div class="problem-card">
+          <span class="problem-icon">📈</span>
+          <h3>Rising Electricity Bills</h3>
+          <p>Unchecked consumption leads to skyrocketing utility costs, diverting institutional funds away from education.</p>
+          <div class="problem-tag orange-alt">₹12 Lakh+ annual loss</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MONITORING ===== -->
+  <section class="section" id="monitoring">
+    <div class="container">
+      <div class="section-eyebrow reveal">LIVE DASHBOARD</div>
+      <h2 class="section-title reveal">Smart Energy <span class="highlight-blue">Monitoring</span></h2>
+      <p class="section-desc reveal">Adjust occupancy levels to see real-time energy consumption and AI-driven optimization status.</p>
+
+      <div class="monitoring-grid reveal">
+        <!-- Occupancy Control -->
+        <div class="monitor-panel">
+          <h3 class="panel-title blue">Occupancy Control</h3>
+          <div class="occupancy-controls">
+            <div class="occ-row">
+              <span class="block-icon">🏛️</span>
+              <span class="block-name">Block A</span>
+              <input type="range" min="0" max="100" value="8" class="occ-slider" data-block="a" aria-label="Block A Occupancy" />
+              <span class="occ-val" id="occ-a">8%</span>
+            </div>
+            <div class="occ-row">
+              <span class="block-icon">🏛️</span>
+              <span class="block-name">Block B</span>
+              <input type="range" min="0" max="100" value="14" class="occ-slider" data-block="b" aria-label="Block B Occupancy" />
+              <span class="occ-val" id="occ-b">14%</span>
+            </div>
+            <div class="occ-row">
+              <span class="block-icon">🏗️</span>
+              <span class="block-name">Block C</span>
+              <input type="range" min="0" max="100" value="25" class="occ-slider" data-block="c" aria-label="Block C Occupancy" />
+              <span class="occ-val" id="occ-c">25%</span>
+            </div>
+            <div class="occ-row">
+              <span class="block-icon">💻</span>
+              <span class="block-name">Computer Lab</span>
+              <input type="range" min="0" max="100" value="30" class="occ-slider" data-block="lab" aria-label="Computer Lab Occupancy" />
+              <span class="occ-val" id="occ-lab">30%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Live Metrics -->
+        <div class="monitor-panel">
+          <h3 class="panel-title blue">Live Metrics</h3>
+          <div class="metrics-grid">
+            <div class="metric-card">
+              <div class="metric-label">TOTAL CONSUMPTION</div>
+              <div class="metric-value blue" id="total-consumption">56 kWh</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-label">EFFICIENCY SCORE</div>
+              <div class="metric-value green" id="efficiency-score">92%</div>
+              <div class="metric-bar"><div class="metric-bar-fill green-fill" id="eff-bar" style="width:92%"></div></div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-label">WASTE RISK</div>
+              <div class="risk-badge low" id="waste-risk">🟢 Low</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-label">OPTIMIZATION STATUS</div>
+              <div class="opt-status" id="opt-status"><span class="status-dot green-dot"></span> Optimizing...</div>
+            </div>
+          </div>
+          <div class="block-consumption">
+            <div class="block-row"><span>Block A</span><div class="block-bar-wrap"><div class="block-bar" id="bar-a" style="width:15%"></div></div><span class="block-kwh" id="kwh-a">6 kWh</span></div>
+            <div class="block-row"><span>Block B</span><div class="block-bar-wrap"><div class="block-bar" id="bar-b" style="width:10%"></div></div><span class="block-kwh" id="kwh-b">8 kWh</span></div>
+            <div class="block-row"><span>Block C</span><div class="block-bar-wrap"><div class="block-bar" id="bar-c" style="width:25%"></div></div><span class="block-kwh" id="kwh-c">25 kWh</span></div>
+            <div class="block-row"><span>Computer Lab</span><div class="block-bar-wrap"><div class="block-bar" id="bar-lab" style="width:40%"></div></div><span class="block-kwh" id="kwh-lab">17 kWh</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AI ENGINE ===== -->
+  <section class="section" id="ai-engine">
+    <div class="container">
+      <div class="section-eyebrow reveal">ARTIFICIAL INTELLIGENCE</div>
+      <h2 class="section-title reveal">AI Prediction <span class="highlight-blue">Engine</span></h2>
+      <p class="section-desc reveal">Our AI workflow processes real-time occupancy data to predict energy waste and generate actionable insights.</p>
+
+      <div class="ai-grid reveal">
+        <!-- Workflow Steps -->
+        <div class="ai-steps">
+          <div class="ai-step active" data-step="1">
+            <div class="step-icon-wrap"><span class="step-icon">🔍</span></div>
+            <div class="step-content">
+              <h4>Collect Data</h4>
+              <p>Real-time occupancy and sensor data acquisition across all zones</p>
+            </div>
+          </div>
+          <div class="ai-step" data-step="2">
+            <div class="step-icon-wrap"><span class="step-icon">🔎</span></div>
+            <div class="step-content">
+              <h4>Analyze Usage</h4>
+              <p>Pattern recognition and historical comparison across building zones</p>
+            </div>
+          </div>
+          <div class="ai-step" data-step="3">
+            <div class="step-icon-wrap"><span class="step-icon">🤖</span></div>
+            <div class="step-content">
+              <h4>Predict Energy Waste</h4>
+              <p>ML model forecasts waste probability and quantifies potential loss</p>
+            </div>
+          </div>
+          <div class="ai-step" data-step="4">
+            <div class="step-icon-wrap"><span class="step-icon">💡</span></div>
+            <div class="step-content">
+              <h4>Generate Recommendations</h4>
+              <p>Smart, context-aware optimization actions ranked by impact</p>
+            </div>
+          </div>
+          <div class="ai-step" data-step="5">
+            <div class="step-icon-wrap"><span class="step-icon">✅</span></div>
+            <div class="step-content">
+              <h4>Improve Efficiency</h4>
+              <p>Continuous learning loop drives compounding performance gains</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI Analysis Panel -->
+        <div class="ai-results-panel">
+          <h3 class="panel-title blue">AI Analysis Results</h3>
+          <div class="ai-metric-row">
+            <span class="ai-metric-label">Waste Probability</span>
+            <span class="ai-metric-val" id="waste-prob">41%</span>
+          </div>
+          <div class="ai-progress-bar">
+            <div class="ai-progress-fill orange-fill" id="waste-bar" style="width:41%"></div>
+          </div>
+          <div class="ai-metric-row" style="margin-top:20px">
+            <span class="ai-metric-label">Risk Level</span>
+          </div>
+          <div class="risk-level-buttons">
+            <button class="risk-btn low-btn" id="risk-low">Low</button>
+            <button class="risk-btn medium-btn active-risk" id="risk-medium">Medium</button>
+            <button class="risk-btn high-btn" id="risk-high">High</button>
+          </div>
+          <div class="ai-metric-row" style="margin-top:20px">
+            <span class="ai-metric-label">AI Efficiency Score</span>
+            <span class="ai-metric-val" id="ai-eff-score">73%</span>
+          </div>
+          <div class="ai-progress-bar">
+            <div class="ai-progress-fill blue-fill" id="ai-eff-bar" style="width:73%"></div>
+          </div>
+          <div class="predicted-savings-box">
+            <div class="ps-label">Predicted Monthly Savings</div>
+            <div class="ps-value blue" id="pred-savings">₹3,461</div>
+          </div>
+          <button class="btn btn-primary btn-full" id="runAiBtn">▶ Run AI Analysis</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ANALYTICS ===== -->
+  <section class="section" id="analytics">
+    <div class="container">
+      <div class="section-eyebrow reveal">DATA ANALYTICS</div>
+      <h2 class="section-title reveal">Energy Analytics <span class="highlight-blue">Dashboard</span></h2>
+      <p class="section-desc reveal">Comprehensive visual analytics powered by AI-driven data processing and Chart.js visualizations.</p>
+
+      <div class="analytics-grid reveal">
+        <!-- Daily Energy Consumption -->
+        <div class="chart-panel">
+          <div class="chart-header">
+            <span class="chart-title">Daily Energy Consumption</span>
+            <span class="chart-badge">kWh</span>
+          </div>
+          <div class="chart-legend">
+            <span class="legend-item"><span class="legend-dot light-blue"></span> Optimized (kWh)</span>
+            <span class="legend-item"><span class="legend-dot dark-blue"></span> Actual (kWh)</span>
+          </div>
+          <canvas id="dailyChart"></canvas>
+        </div>
+
+        <!-- Waste Prediction Trend -->
+        <div class="chart-panel">
+          <div class="chart-header">
+            <span class="chart-title">Waste Prediction Trend</span>
+          </div>
+          <div class="chart-legend">
+            <span class="legend-item"><span class="legend-dot orange-dot"></span> Predicted Waste %</span>
+            <span class="legend-item"><span class="legend-dot red-dot dashed"></span> Threshold</span>
+          </div>
+          <canvas id="wasteChart"></canvas>
+        </div>
+
+        <!-- Efficiency Performance -->
+        <div class="chart-panel">
+          <div class="chart-header">
+            <span class="chart-title">Efficiency Performance</span>
+            <span class="chart-badge">Score %</span>
+          </div>
+          <canvas id="efficiencyChart"></canvas>
+        </div>
+
+        <!-- Savings Forecast -->
+        <div class="chart-panel">
+          <div class="chart-header">
+            <span class="chart-title">Savings Forecast</span>
+          </div>
+          <div class="chart-legend">
+            <span class="legend-item"><span class="legend-dot dark-blue"></span> Actual Savings ₹</span>
+            <span class="legend-item"><span class="legend-dot cyan-dot"></span> Projected ₹</span>
+          </div>
+          <canvas id="savingsChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AI RECOMMENDATIONS ===== -->
+  <section class="section" id="recommendations">
+    <div class="container">
+      <div class="section-eyebrow reveal">SMART INSIGHTS</div>
+      <h2 class="section-title reveal">AI <span class="highlight-blue">Recommendations</span></h2>
+      <p class="section-desc reveal">Intelligent, context-aware recommendations generated by our AI engine to maximize energy efficiency.</p>
+
+      <div class="rec-grid reveal">
+        <div class="rec-card">
+          <div class="rec-priority high-priority">HIGH PRIORITY</div>
+          <span class="rec-icon">💡</span>
+          <h3>Reduce Unnecessary Lighting</h3>
+          <p>Install motion-sensor systems in Block A corridors. Estimated 18% reduction in lighting energy during off-hours.</p>
+          <div class="rec-footer">
+            <span class="rec-saving green-text">Save ₹1,240/mo</span>
+            <span class="rec-impact impact-high">High Impact</span>
+          </div>
+        </div>
+        <div class="rec-card">
+          <div class="rec-priority high-priority">HIGH PRIORITY</div>
+          <span class="rec-icon">❄️</span>
+          <h3>Optimize AC Usage</h3>
+          <p>Set AC units to auto-shutdown when occupancy drops below 20%. Smart thermostats cut cooling costs by 25%.</p>
+          <div class="rec-footer">
+            <span class="rec-saving green-text">Save ₹2,100/mo</span>
+            <span class="rec-impact impact-high">High Impact</span>
+          </div>
+        </div>
+        <div class="rec-card">
+          <div class="rec-priority medium-priority">MEDIUM</div>
+          <span class="rec-icon">💻</span>
+          <h3>Turn Off Idle Systems</h3>
+          <p>Enable aggressive sleep policies on all lab computers. Idle systems should enter low-power mode after 10 minutes.</p>
+          <div class="rec-footer">
+            <span class="rec-saving green-text">Save ₹680/mo</span>
+            <span class="rec-impact impact-medium">Medium Impact</span>
+          </div>
+        </div>
+        <div class="rec-card">
+          <div class="rec-priority medium-priority">MEDIUM</div>
+          <span class="rec-icon">🔋</span>
+          <h3>Smart Schedule Optimization</h3>
+          <p>Align equipment schedules with timetables. Automatically pre-cool rooms 10 minutes before classes begin.</p>
+          <div class="rec-footer">
+            <span class="rec-saving green-text">Save ₹560/mo</span>
+            <span class="rec-impact impact-medium">Medium Impact</span>
+          </div>
+        </div>
+        <div class="rec-card">
+          <div class="rec-priority long-term-priority">LONG TERM</div>
+          <span class="rec-icon">☀️</span>
+          <h3>Solar Integration Audit</h3>
+          <p>Block C south-facing roof is ideal for solar panels. Projected ROI within 4 years at current energy prices.</p>
+          <div class="rec-footer">
+            <span class="rec-saving green-text">Save ₹3,500/mo</span>
+            <span class="rec-impact impact-strategic">Strategic</span>
+          </div>
+        </div>
+        <div class="rec-card">
+          <div class="rec-priority long-term-priority">LONG TERM</div>
+          <span class="rec-icon">📊</span>
+          <h3>Energy Benchmarking</h3>
+          <p>Establish department-wise energy budgets and monthly scorecards to build a culture of conscious energy use.</p>
+          <div class="rec-footer">
+            <span class="rec-saving green-text">Save ₹900/mo</span>
+            <span class="rec-impact impact-behavioral">Behavioral</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SDG ===== -->
+  <section class="section" id="sdg">
+    <div class="container">
+      <div class="section-eyebrow reveal">GLOBAL GOALS</div>
+      <h2 class="section-title reveal">SDG <span class="highlight-blue">Alignment</span></h2>
+      <p class="section-desc reveal">EcoVolt AI directly contributes to three United Nations Sustainable Development Goals.</p>
+
+      <div class="sdg-grid reveal">
+        <div class="sdg-card">
+          <div class="sdg-badge sdg-7">SDG 7</div>
+          <span class="sdg-icon">⚡</span>
+          <h3>Affordable and Clean Energy</h3>
+          <p>EcoVolt AI reduces energy waste by up to 40%, making electricity more affordable for educational institutions. Our platform promotes efficient use of existing infrastructure while paving the path toward renewable energy integration through data-driven solar audits.</p>
+          <div class="sdg-targets">
+            <span class="sdg-target">Target 7.2</span>
+            <span class="sdg-target">Target 7.3</span>
+          </div>
+        </div>
+        <div class="sdg-card sdg-card-featured">
+          <div class="sdg-badge sdg-12">SDG 12</div>
+          <span class="sdg-icon">♻️</span>
+          <h3>Responsible Consumption &amp; Production</h3>
+          <p>By monitoring and optimizing energy consumption patterns, EcoVolt AI encourages responsible resource use. Institutions gain visibility into their consumption footprint and adopt sustainable practices, reducing unnecessary energy production demand.</p>
+          <div class="sdg-targets">
+            <span class="sdg-target">Target 12.2</span>
+            <span class="sdg-target">Target 12.5</span>
+          </div>
+        </div>
+        <div class="sdg-card">
+          <div class="sdg-badge sdg-13">SDG 13</div>
+          <span class="sdg-icon">🌍</span>
+          <h3>Climate Action</h3>
+          <p>Every kWh saved translates into reduced carbon emissions. EcoVolt AI's engine helps institutions lower their carbon footprint by an estimated 28 tonnes of CO₂ annually, contributing meaningfully to global climate action goals.</p>
+          <div class="sdg-targets">
+            <span class="sdg-target">Target 13.1</span>
+            <span class="sdg-target">Target 13.3</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== IMPACT ===== -->
+  <section class="section" id="impact">
+    <div class="container">
+      <div class="section-eyebrow reveal">MEASURABLE OUTCOMES</div>
+      <h2 class="section-title reveal">Project <span class="highlight-blue">Impact</span></h2>
+      <p class="section-desc reveal">Quantified, real-world outcomes achieved by EcoVolt AI deployment in educational institutions.</p>
+
+      <div class="impact-grid reveal">
+        <div class="impact-card">
+          <span class="impact-icon">⚡</span>
+          <div class="impact-value blue">40%</div>
+          <div class="impact-name">Energy Reduction</div>
+          <p>Average reduction in total energy consumption across all monitored campuses</p>
+        </div>
+        <div class="impact-card impact-card-featured">
+          <span class="impact-icon">💰</span>
+          <div class="impact-value blue">₹12 Lakh</div>
+          <div class="impact-name">Annual Cost Savings</div>
+          <p>Direct monetary savings per institution per year on electricity bills</p>
+        </div>
+        <div class="impact-card">
+          <span class="impact-icon">🌿</span>
+          <div class="impact-value blue">28 T CO₂</div>
+          <div class="impact-name">Carbon Footprint Reduction</div>
+          <p>Tonnes of CO₂ emissions avoided annually per campus deployment</p>
+        </div>
+        <div class="impact-card">
+          <span class="impact-icon">📈</span>
+          <div class="impact-value blue">94%</div>
+          <div class="impact-name">Sustainability Improvement</div>
+          <p>Composite sustainability score improvement across all measured indicators</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">EcoVolt <span class="logo-ai">AI</span></span>
+      </div>
+      <p class="footer-tagline">Smart Energy Optimization Platform</p>
+      <p class="footer-copy">© 2025 EcoVolt AI: Smart Energy Optimization Platform. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
